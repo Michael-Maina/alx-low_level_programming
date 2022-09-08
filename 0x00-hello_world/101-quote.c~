@@ -1,0 +1,15 @@
+/* Prints string */
+
+#include <stdio.h>
+
+/**
+ * main - program starts here
+ *Return: print string; otherwise 0
+ */
+
+int main(void)
+{
+	
+
+	return (0);
+}
