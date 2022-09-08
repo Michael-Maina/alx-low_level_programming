@@ -5,7 +5,7 @@
 
 /**
  * main - contains main program code
- * Return - print string; 0 otherwise
+ * Return: print string; 0 otherwise
  */
 
 
