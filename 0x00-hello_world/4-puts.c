@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
+/* Description: the main function*/
+
+int main(void)
 {
 	char str1[] = "\"Programming is like building a multilingual puzzle";
 
