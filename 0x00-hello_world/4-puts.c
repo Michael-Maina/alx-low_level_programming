@@ -3,9 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* 
- * main - contains main program code
- */
+/*main - contains main program code*/
 
 int main(void)
 {
