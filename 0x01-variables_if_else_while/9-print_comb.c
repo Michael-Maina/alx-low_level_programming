@@ -11,9 +11,9 @@ int main(void)
 {
 	int i;
 
-	for (97 >= i <= 100; 102 >= i <= 112; 114 >= i <= 122)
-		putchar(i), i++;
-
-	putchar('\n');
+	for (i = 48; i <= 57; i++)
+		putchar(i);
+		putchar(", ");
+	
 	return (0);
 }
