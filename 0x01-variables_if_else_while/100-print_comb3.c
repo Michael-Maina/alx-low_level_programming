@@ -19,17 +19,14 @@ int main(void)
 	{
 		for (j = i + 1; j <= 57; j++)
 		{
-			if (i != j)
-			{
-				putchar(i);
-				putchar(j);
+			putchar(i);
+			putchar(j);
 
-				if (i == 56 && j == 57)
-					continue;
+			if (i == 56 && j == 57)
+				continue;
 
-				putchar(44);
-				putchar(32);
-			}
+			putchar(44);
+			putchar(32);
 		}
 	}
 
