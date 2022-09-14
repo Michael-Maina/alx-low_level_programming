@@ -13,7 +13,7 @@ int main(void)
 	long int b = 2;
 	long int c;
 
-	printf("%ld, %ld ,", a, b);
+	fprintf(stderr, "%ld, %ld ,", a, b);
 
 	for (n = 0; n <= 47; n++)
 	{
@@ -21,12 +21,12 @@ int main(void)
 
 		if (n != 47)
 		{
-			printf("%ld, ", c);
+			fprintf(stderr, "%ld, ", c);
 			a = b;
 			b = c;
 		}
 		else
-			printf("%ld", c);
+			fprintf(stderr, "%ld", c);
 	}
 
 	printf("\n");
