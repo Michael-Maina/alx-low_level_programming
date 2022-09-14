@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * 9-times_table - prints the 9 times table, starting with 0
@@ -8,15 +9,15 @@
 
 void times_table(void)
 {
-	int i, j, solution;
+	int i, j, k;
 
 	for (i = 0; i <= 9; i++)
 	{	for (j = 0; j <= 9; j++)
 		{
-			solution = i * j;
-			_putchar(solution + '0');
-			_putchar(',');
-			_putchar(' ');
+			k = i * j;
+			write(1, &k, );
+			write(1, ",", 1);
+			write(1, " ", 1);
 		}
 
 		_putchar('\n');
