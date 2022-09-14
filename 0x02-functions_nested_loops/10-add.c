@@ -13,7 +13,5 @@ int add(int a, int b)
 
 	sum = a + b;
 
-	write(1, &sum, 1);
-
-	return (0);
+	return (sum);
 }
