@@ -2,6 +2,7 @@
 
 int main(void)
 {
-	times_table();
+	int n = 120;
+	print_to_98(n);
 	return (0);
 }
