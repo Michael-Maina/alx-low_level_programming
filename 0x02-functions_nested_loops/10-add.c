@@ -13,7 +13,7 @@ int add(int a, int b)
 
 	sum = a + b;
 
-	_putchar(sum + '0');
+	write(1, &sum, 1);
 
 	return (0);
 }
