@@ -13,7 +13,7 @@ int main(void)
 	unsigned long int b = 2;
 	unsigned long int c;
 
-	printf("%ld, %ld ,", a, b);
+	printf("%lu, %lu ,", a, b);
 
 	for (n = 0; n <= 95; n++)
 	{
@@ -21,12 +21,12 @@ int main(void)
 
 		if (n != 95)
 		{
-			printf("%ld, ", c);
+			printf("%lu, ", c);
 			a = b;
 			b = c;
 		}
 		else
-			printf("%ld", c);
+			printf("%lu", c);
 	}
 
 	printf("\n");
