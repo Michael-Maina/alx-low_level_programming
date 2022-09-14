@@ -4,7 +4,11 @@
 
 int main(void)
 {
-	print_alphabet_x10();
+	int var1 = 'a';
+	int r;
 
+	_islower(var1);
+	_putchar(r + '0');
+	
 	return (0);
 }
