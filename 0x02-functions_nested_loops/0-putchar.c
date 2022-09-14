@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * main - program starts here
  * Function _putchar declared in the main.h file
  * Prints the string _putchar followed by a new line;
  * Return: 1 on success, -1 on error.
