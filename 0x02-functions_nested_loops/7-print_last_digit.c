@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
  * print_last_digit - prints the last digit of a number
  *
@@ -14,7 +14,10 @@ int print_last_digit(int a)
 
 	last_digit = a % 10;
 
-	return(last_digit);
+	if (last_digit < 0)
+		last_digit = last_digit * -1;
+
+	return (last_digit);
 
 	return (0);
 }
