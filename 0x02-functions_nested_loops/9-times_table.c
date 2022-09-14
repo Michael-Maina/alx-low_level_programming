@@ -8,15 +8,12 @@
 
 void times_table(void)
 {
-	// int i, j;
+	int i, j;
 
-	int vols[] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
-	int count, count_i;
-
-	for (count = 0; count <= sizeof(vols); count++)
-	{	for (count_i = 0; count_i <= sizeof(vols); count_i++)
+	for (i = 0; i <= 9; i++)
+	{	for (j = 0; j <= 9; j++)
 		{
-			_putchar(vols[count] * vols[count_i]);
+			_putchar(i * j);
 			_putchar(',');
 			_putchar(' ');
 		}
