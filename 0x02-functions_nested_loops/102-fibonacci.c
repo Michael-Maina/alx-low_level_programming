@@ -13,14 +13,14 @@ int main(void)
 	long int b = 2;
 	long int c;
 
-	printf("%ld, %ld ,", a, b);
-
-	for (n = 0; n <= 47; n++)
+	for (n = 0; n <= 49; n++)
 	{
-		c = a + b;
-
-		if (n != 47)
+		if (n == 0)
+			printf("%ld, %ld ,", a, b);
+		
+	       	else if (n != 49)
 		{
+			c = a + b;
 			printf("%ld, ", c);
 			a = b;
 			b = c;
