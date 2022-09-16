@@ -5,6 +5,7 @@
  * @size: size of both width and length
  * Return: a square made of '#'
  */
+
 void print_square(int size)
 {
 	int i, j;
