@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	more_numbers();
+	print_triangle(2);
 
 	return (0);
 }
