@@ -9,6 +9,7 @@
 int main(void)
 {
 	long int n, prime_factor;
+
 	n = 612852475143;
 
 	for (prime_factor = 2; prime_factor <= n; prime_factor++)
