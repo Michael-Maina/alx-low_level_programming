@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	print_triangle(2);
+	print_triangle(3);
 
 	return (0);
 }
