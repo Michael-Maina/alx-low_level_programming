@@ -11,7 +11,7 @@ int _strlen(char *s)
 	int a;
 
 	for (a = 0; *s != '\0'; s++) /*counts characters in string until \0. */
-		n++;
+		a++;
 
-	return (n);
+	return (a);
 }
