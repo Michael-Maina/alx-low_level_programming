@@ -17,14 +17,12 @@ void print_rev(char *s)
 
 	while (len >= i)
 	{
-		_putchar(*(s + len));
 		len--;
+		_putchar(*(s + len));
 	}
 	_putchar('\n');
 }
 
-
-#include "main.h"
 
 /**
  * _strlen - returns the length of a string
