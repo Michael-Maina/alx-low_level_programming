@@ -1,6 +1,5 @@
 #include "main.h"
 
-int _strlen(char *s);
 /**
  * rev_string - reverses a string
  * @s: string to be reversed
@@ -10,33 +9,26 @@ int _strlen(char *s);
 
 void rev_string(char *s)
 {
-	int i = 0;
-	int len;
-	char *rev_str = s;
+	int i, c, k;
+	char *a, aux;
 
-	len = _strlen(s);
+	a = s;
 
-	for (; i < len;)
+	while (s[c] != '\0')
 	{
-		len--;
-		*(rev_str + i) = *(s + (len - i - 1));
-		i++;
+		c++;
 	}
-}
 
-
-/**
- * _strlen - returns the length of a string
- * @s: string whose length is to be determined
- * Return: Always 0
- */
-
-int _strlen(char *s)
-{
-	int a;
-
-	for (a = 0; *s != '\0'; s++) /*counts characters in string until \0. */
+	for (k = 1; k < c; k++)
+	{
 		a++;
+	}
 
-	return (a);
+	for (i = 0; i < (c / 2); i++)
+	{
+		aux = s[i];
+		s[i] = *a;
+		*a = aux;
+		a--;
+	}
 }
