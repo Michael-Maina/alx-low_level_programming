@@ -11,9 +11,9 @@ int _strlen(char *s);
 
 void puts_half(char *str)
 {
-	int len, len_half;
+	int len, len_half_even, len_half_odd;
 
-	len = strlen(str);
+	len = _strlen(str);
 
 	len_half_even = len / 2;
 	len_half_odd = (len - 1) / 2;
