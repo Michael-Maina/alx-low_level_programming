@@ -18,9 +18,11 @@ void puts_half(char *str)
 	len_half_even = len / 2;
 	len_half_odd = (len - 1) / 2;
 
-	if (len % 2 == 0)
+	if (len == 0)
+		;
+	else if (len % 2 == 0)
 	{
-		while (len_half_even <= len)
+		while (len_half_even < len)
 		{
 			_putchar(*(str + len_half_even));
 			len_half_even++;
@@ -28,7 +30,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while ((len_half_odd) <= len)
+		while ((len_half_odd) < len)
 		{
 			_putchar(*(str + len_half_odd));
 			len_half_odd++;
