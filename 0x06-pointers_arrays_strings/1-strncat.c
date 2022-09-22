@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int len_dest = 0;   /* length of string dest */
 	int len_src = 0;    /* length of string src */
-	int i,j;            /* loop counter variables */
+	int i, j;            /* loop counter variables */
 
 	for (; dest[len_dest] != '\0'; len_dest++)  /* finds length of dest */
 		;
