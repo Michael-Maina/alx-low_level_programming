@@ -11,7 +11,6 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int c = 0;
-	char *t = accept;
 
 	while (*s++)
 	{
@@ -23,7 +22,6 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		if (!(*--accept))
 			break;
-		accept = t;
 	}
 	return (c);
 }
