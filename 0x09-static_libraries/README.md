@@ -1,0 +1,1 @@
+This directory contains code on the creation of static libraries in C.
