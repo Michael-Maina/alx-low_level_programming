@@ -1,0 +1,1 @@
+This directory contains more C code exploring the use of the malloc() and free() functions.
