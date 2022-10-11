@@ -1,73 +1,67 @@
-#include "dog.h"
 #include <stdlib.h>
-
-char *_strcopy(char *dest, char *src);
-
+#include "dog.h"
 /**
- * _strcopy - Copies a string pointed to by src, including the
- *            terminating null byte, to a buffer pointed to by dest.
- * @dest: The buffer storing the string copy.
- * @src: The source string.
- * Return: The pointer to dest
+ * _strdup - returns a pointer to a newly allocated space in memory,
+ * which contains a copy of the string given as a parameter.
+ * @str: The string to copy
+ * Return: a pointer to the duplicated string, NULL if insufficient memory
+ * or if @str is NULL
  */
-
-char *_strcopy(char *dest, char *src)
+char *_strdup(char *str)
 {
-	int len = 0;
-	int index;
+	char *ar;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-	while (*dest != '\0')
-		len++;
-
-	src = malloc(sizeof(char) * (len + 1));
-
-	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
-
-	dest[index] = '\0';
-
-	return (dest);
+	if (str == NULL)
+		return (NULL);
+	while (str[i])
+		i++;
+	ar = malloc(sizeof(char) * (i + 1));
+	if (ar == NULL)
+		return (NULL);
+	while (str[j])
+	{
+		ar[j] = str[j];
+		j++;
+	}
+	ar[j] = 0;
+	return (ar);
 }
-
 /**
- * *new_dog - creates a new dog
+ * new_dog - creates a new dog
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
- * Return: new struct dog
+ * Return: NULL if function fails
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
-	char *name_cpy;
-	char *owner_cpy;
+	char *ncpy;
+	char *ocpy;
 
 	new = malloc(sizeof(dog_t));
-
 	if (new == NULL)
 		return (NULL);
 
-	_strcopy(name_cpy, name);
-
-	if (!name_cpy && name)
+	ncpy = _strdup(name);
+	if (!ncpy && name)
 	{
 		free(new);
 		return (NULL);
 	}
-
-	_strcopy(owner_cpy, owner);
-
-	if (!owner_cpy && owner)
+	ocpy = _strdup(owner);
+	if (!ocpy && owner)
 	{
-		free(name_cpy);
+		free(ncpy);
 		free(new);
 		return (NULL);
 	}
 
-	new->name = name_cpy;
+	new->name = ncpy;
 	new->age = age;
-	new->owner = owner_cpy;
+	new->owner = ocpy;
 
 	return (new);
 }
