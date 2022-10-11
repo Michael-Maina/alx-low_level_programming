@@ -8,13 +8,18 @@ char *_strcopy(char *dest, char *src);
  *            terminating null byte, to a buffer pointed to by dest.
  * @dest: The buffer storing the string copy.
  * @src: The source string.
- *
  * Return: The pointer to dest
  */
 
 char *_strcopy(char *dest, char *src)
 {
-	int index = 0;
+	int len = 0;
+	int index;
+
+	while (*dest != '\0')
+		len++;
+
+	src = malloc(sizeof(char) * (len + 1));
 
 	for (index = 0; src[index]; index++)
 		dest[index] = src[index];
