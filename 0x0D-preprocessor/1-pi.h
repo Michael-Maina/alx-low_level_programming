@@ -1,5 +1,5 @@
-#ifndef 1-PI_H
-#define 1-PI_H
+#ifndef PI_H
+#define PI_H
 
 /*
  * File: 1-pi.h
