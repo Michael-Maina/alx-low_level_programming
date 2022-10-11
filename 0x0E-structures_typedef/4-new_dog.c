@@ -1,6 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
 
+char *_strcopy(char *dest, char *src);
+
 /**
  * _strcopy - Copies a string pointed to by src, including the
  *            terminating null byte, to a buffer pointed to by dest.
