@@ -2,11 +2,10 @@
 #define DOG_H
 
 /**
- * dog - defines a new data type
- * @name: first element
- * @age: second element
- * @owner: third element
- *
+ * struct dog - describes a dog and its attributes
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  */
 
 struct dog
