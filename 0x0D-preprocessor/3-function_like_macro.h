@@ -7,6 +7,6 @@
  *       ABS(x) that computes the absolute value of x
  */
 
-#define int unsigned int
+#define ABS(x) (unsigned int x)
 
 #endif
