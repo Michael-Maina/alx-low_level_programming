@@ -1,7 +1,6 @@
-#include <stdio.h>
-
 #ifndef _3_CALC_H_
 #define _3_CALC_H_
+#include <stdio.h>
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
