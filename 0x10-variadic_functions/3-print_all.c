@@ -87,7 +87,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	printer_t funcs[] = {
 		{"c", print_char},
-		{"i", print_int},
+		{"i", print_integer},
 		{"f", print_float},
 		{"s", print_string}
 	};
