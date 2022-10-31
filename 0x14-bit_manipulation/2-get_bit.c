@@ -9,26 +9,11 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i = 0;
-	unsigned long int array[32];
-
-	if (n == 0)
-	{
-		return (0);
-	}
-
-	while (n > 0)
-	{
-		array[i] = n % 2;
-		n = n / 2;
-		i++;
-	}
-
-	i -= 1;
-
-	if (index > i)
+	if (n == 0 || index >= 64)
 		return (-1);
 
-	return (array[index]);
+	if (n & (n << index) == 0)
+		return (0);
 
+	return (1);
 }
