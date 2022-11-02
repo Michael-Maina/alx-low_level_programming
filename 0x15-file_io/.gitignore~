@@ -1,0 +1,5 @@
+# ignore executable
+a.out
+
+# ignore test file
+main.c
