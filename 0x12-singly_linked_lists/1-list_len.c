@@ -10,19 +10,11 @@
 size_t list_len(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *ptr = NULL;
 
-	ptr = malloc(sizeof(list_t));
-
-	if (ptr == NULL)
-		return (0);
-
-	ptr = h;
-
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 		count++;
-		ptr = ptr->next;
+		h = h->next;
 	}
 
 	return (count);
