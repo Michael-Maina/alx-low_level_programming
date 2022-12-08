@@ -2,7 +2,7 @@
 
 /**
  * get_dnodeint_at_index - returns the nth node of a doubly linked list
- * @h: pointer to head of list
+ * @head: pointer to head of list
  * @index: index of node in linked list
  *
  * Return: node at index, NULL if node doesn't exist
