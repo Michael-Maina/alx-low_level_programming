@@ -1,1 +1,1 @@
-This directory contains C code exploring the use of dynamic libraries. 
+This directory contains C code exploring the use of dynamic libraries.
