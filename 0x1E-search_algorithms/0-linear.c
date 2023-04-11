@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * linear_search - prints the number of arguments passed to it
+ * linear_search - looks for value in sorted array of integers by Linear Search
  * @array: array containing arguments passed to the program
  * @size: number of arguments
  * @value: value to search for
