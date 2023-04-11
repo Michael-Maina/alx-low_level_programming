@@ -2,5 +2,5 @@
 *~
 
 # Ignore C executable files
-/build/
+build/
 *-main.c
