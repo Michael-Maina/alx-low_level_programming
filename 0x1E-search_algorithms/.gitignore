@@ -1,0 +1,6 @@
+# Ignore emacs temporary files
+*~
+
+# Ignore C executable files
+/build/
+*-main.c
