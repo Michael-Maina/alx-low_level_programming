@@ -25,19 +25,12 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d\n", array[i]);
 	}
 
-	if (size % 2 == 1)
-	{
-		mid_idx = (size / 2);
-		size = mid_idx;
-	}
+	mid_idx = (size / 2);
+
+	if (size % 2 == 0 && value < array[mid_idx])
+		size = mid_idx - 1;
 	else
-	{
-		mid_idx = (size / 2) - 1;
-		if (value > array[mid_idx])
-			size = mid_idx + 1;
-		else if (value < array[mid_idx])
-			size = mid_idx;
-	}
+		size = mid_idx;
 
 	if (array[mid_idx] == value)
 		return (mid_idx);
